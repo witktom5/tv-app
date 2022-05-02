@@ -2,7 +2,7 @@ import ColorSchemeToggler from './ColorSchemeToggler';
 
 function Navbar() {
   return (
-    <div className='bg-base-300 flex justify-center'>
+    <nav className='bg-base-300 flex justify-center custom-navbar'>
       <div className='navbar lg:w-4/5'>
         <div className='flex-none'>
           <button className='btn btn-square btn-ghost'>
@@ -31,7 +31,7 @@ function Navbar() {
           <ColorSchemeToggler />
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 export default Navbar;
