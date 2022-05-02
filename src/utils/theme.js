@@ -6,7 +6,7 @@ function setTheme(themeName) {
 function saveTheme() {
   if (localStorage.getItem('theme')) {
     if (localStorage.getItem('theme') === 'dark') {
-      setTheme('night');
+      setTheme('dark');
     } else if (localStorage.getItem('theme') === 'light') {
       setTheme('light');
     }
