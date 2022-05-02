@@ -1,4 +1,5 @@
-import ColorSchemeToggler from './ColorSchemeToggler';
+import ColorSchemeToggler from '../ColorSchemeToggler';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -22,12 +23,14 @@ function Navbar() {
           </button>
         </div>
         <div className='flex-1'>
-          <a href='#' className='btn btn-ghost normal-case text-xl'>
+          <Link to='/' className='btn btn-ghost normal-case text-xl'>
             TV Finder
-          </a>
+          </Link>
         </div>
         <div className='flex-none'>
-          <button className='btn btn-ghost'>Button</button>
+          <Link to='/categories' className='btn btn-ghost'>
+            Categories
+          </Link>
           <ColorSchemeToggler />
         </div>
       </div>

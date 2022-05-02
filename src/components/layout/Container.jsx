@@ -1,6 +1,6 @@
 function Container({ children }) {
   return (
-    <main className='bg-base-200 flex justify-center'>
+    <main className='flex justify-center pt-4 md:pt-10 lg:pt-14 xl:pt-16'>
       <div className='lg:w-4/5'>{children}</div>
     </main>
   );
