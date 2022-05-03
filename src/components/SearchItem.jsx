@@ -15,22 +15,25 @@ function SearchItem({
 
   const shortenSummary = (summary) => {
     if (summary) {
-      if (summary.toString().length < 300) return summary;
-      return summary.toString().slice(3, 300).trim() + '... (more in details)';
+      if (summary.toString().length < 220) return summary;
+      return (
+        summary.toString().slice(3, 220).trim() +
+        '<span class="opacity-80">... (more in details)</span>'
+      );
     } else {
       return 'Summary unavaiable';
     }
   };
 
   return (
-    <div className='bg-base-200 rounded-xl shadow-xl mb-8 flex flex-col sm:flex-row gap-2'>
+    <div className='bg-base-200 rounded-xl shadow-xl mb-8 flex flex-col sm:flex-row gap-2 mx-auto'>
       <div className='flex flex-row sm:flex-col bg-base-300 flex-none rounded-t-xl lg:rounded-l-xl'>
         <img
           src={image ?? noPhoto}
           alt={name}
           className='tv-show-img object-scale-down bg-no-repeat rounded-tl-xl'
         />
-        <div className='p-3 flex flex-col justify-center h-full'>
+        <div className='p-3 flex flex-col justify-center h-full mx-auto'>
           <p>
             <strong>Language:</strong> {language ?? 'Unknown'}
           </p>

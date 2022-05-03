@@ -22,16 +22,23 @@ function SearchResults() {
   };
 
   return (
-    <section className='w-4/5 sm:w-4/5 lg:w-1/2 xl:w-1/3 2xl:w-1/3'>
-      <Header title={`Search results for "${searchText}"`} />
+    <section className='w-4/5'>
+      <Header
+        title={`${
+          searchData.length > 0 ? searchData.length : 'No'
+        } search result${
+          searchData.length === 1 ? '' : 's'
+        } for "${searchText}"`}
+      />
+
       <button
         onClick={onClickBack}
-        className='btn btn-outline btn-sm flex gap-2 mb-6'
+        className='btn btn-outline btn-sm flex gap-2 mb-6 mx-auto'
       >
         <FaArrowLeft /> Back to Search
       </button>
 
-      <div>
+      <div className='grid xl:grid-cols-2 gap-x-8 w-full sm:w-5/6 md:w-3/4 lg:w-2/3 xl:w-full 2xl:w-3/4 3xl:w-2/3 mx-auto'>
         {searchData &&
           searchData.map((el, id) => (
             <SearchItem
