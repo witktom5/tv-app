@@ -1,20 +1,28 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import SearchContext from '../context/search/SearchContext';
 import { FaSearch } from 'react-icons/fa';
 import Header from '../components/Header';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
 
 function Home() {
-  const [searchText, setSearchText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+
+  const { setSearchData, searchText, setSearchText } =
+    useContext(SearchContext);
+
   const API_URL = 'https://api.tvmaze.com/search/shows?q=';
+
+  const navigate = useNavigate();
 
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
       setIsLoading(true);
       const res = await axios.get(`${API_URL}${searchText}`);
-      console.log(res.data);
+      setSearchData(res.data);
+      navigate('/search/results');
     } catch (error) {
       console.log(error);
     }
