@@ -44,3 +44,15 @@
     transform: rotate(360deg);
   }
 }
+
+.tv-show-img {
+  max-width: 210px;
+  max-height: 295px;
+}
+
+@media (max-width: 1024px) {
+  .tv-show-img {
+    max-width: 168px;
+    max-height: 236px;
+  }
+}

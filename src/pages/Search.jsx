@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SearchContext from '../context/search/SearchContext';
 import { FaSearch } from 'react-icons/fa';
@@ -9,12 +9,16 @@ import Spinner from '../components/Spinner';
 function Home() {
   const [isLoading, setIsLoading] = useState(false);
 
-  const { setSearchData, searchText, setSearchText } =
+  const { setSearchData, searchText, searchData, setSearchText } =
     useContext(SearchContext);
 
   const API_URL = 'https://api.tvmaze.com/search/shows?q=';
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (searchData) navigate('/search/results');
+  });
 
   const onSubmit = async (e) => {
     e.preventDefault();
