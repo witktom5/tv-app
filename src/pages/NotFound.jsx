@@ -1,10 +1,10 @@
 import Header from '../components/Header';
 
-function Home() {
+function NotFound() {
   return (
     <section>
-      <Header title={'Home'} />
+      <Header title={'Page Not Found'} />
     </section>
   );
 }
-export default Home;
+export default NotFound;

@@ -2,15 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+#root {
   min-height: 100vh;
-  padding-top: 64px;
-}
-
-.page-container {
+  padding-top: 86px;
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 64px);
 }
 
 .custom-navbar {
