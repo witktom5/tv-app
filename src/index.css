@@ -46,13 +46,13 @@
 }
 
 .tv-show-img {
-  max-width: 210px;
-  max-height: 295px;
+  width: 210px;
+  height: 295px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 640px) {
   .tv-show-img {
-    max-width: 168px;
-    max-height: 236px;
+    width: 147px;
+    height: 206.5px;
   }
 }
