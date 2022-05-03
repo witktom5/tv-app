@@ -11,7 +11,8 @@ function SearchItem({
   premiered,
   ended,
 }) {
-  // shorten summary to max 300 characters
+  // shorten summary to max 220 characters,
+  // handle no summary situations
 
   const shortenSummary = (summary) => {
     if (summary) {
@@ -21,7 +22,7 @@ function SearchItem({
         '<span class="opacity-80">... (more in details)</span>'
       );
     } else {
-      return 'Summary unavaiable';
+      return 'Summary for this TV show is unavaiable';
     }
   };
 
@@ -54,7 +55,9 @@ function SearchItem({
         </div>
       </div>
       <div className='flex flex-col gap-4 p-3 pr-6 w-full'>
-        <h2 className='card-title text-2xl pt-2 pb-4'>{name}</h2>
+        <h2 className='card-title text-2xl pt-2 md:pt-8 pb-4 self-center'>
+          {name}
+        </h2>
         <div
           dangerouslySetInnerHTML={{ __html: shortenSummary(summary) }}
           className='my-auto'

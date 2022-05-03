@@ -13,7 +13,7 @@ function SearchResults() {
 
   useEffect(() => {
     if (!searchData) navigate('/search');
-  }, []);
+  }, [navigate, searchData]);
 
   const onClickBack = () => {
     setSearchData(null);
@@ -23,17 +23,17 @@ function SearchResults() {
 
   return (
     <section className='w-4/5'>
-      <Header
-        title={`${
-          searchData.length > 0 ? searchData.length : 'No'
-        } search result${
-          searchData.length === 1 ? '' : 's'
-        } for "${searchText}"`}
-      />
+      <Header title={`Search results for "${searchText}"`} />
+      <h3 className='text-center text-xl -mt-10 mb-6'>
+        {searchData.length > 0
+          ? searchData.length +
+            ` result${searchData.length === 1 ? '' : 's'} found`
+          : 'No results found'}
+      </h3>
 
       <button
         onClick={onClickBack}
-        className='btn btn-outline btn-sm flex gap-2 mb-6 mx-auto'
+        className='btn btn-outline btn-sm flex gap-2 mb-7 mx-auto'
       >
         <FaArrowLeft /> Back to Search
       </button>

@@ -6,7 +6,7 @@ function Footer() {
           <p>TV Finder 2022</p>
         </div>
         <div className='gap-4 ml-auto'>
-          <a>
+          <a href='/'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='24'

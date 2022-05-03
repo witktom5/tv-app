@@ -10,12 +10,12 @@ function Navbar() {
         <div className='flex-none'></div>
         <DropdownMenu>
           <MenuButton url='/' icon={<FaHome />} text='Home' />
-          <MenuButton url='/categories' icon={<FaTv />} text='Categories' />
+          <MenuButton url='/top' icon={<FaTv />} text='Top Shows' />
           <MenuButton url='/search' icon={<FaSearch />} text='Search' />
         </DropdownMenu>
         <div className='hidden lg:flex'>
           <MenuButton url='/' icon={<FaHome />} text='Home' />
-          <MenuButton url='/categories' icon={<FaTv />} text='Categories' />
+          <MenuButton url='/top' icon={<FaTv />} text='Top Shows' />
           <MenuButton url='/search' icon={<FaSearch />} text='Search' />
         </div>
         <div className='ml-auto'>

@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
 
-function Home() {
+function Search() {
   const [isLoading, setIsLoading] = useState(false);
 
   const { setSearchData, searchText, searchData, setSearchText } =
@@ -63,4 +63,4 @@ function Home() {
     </section>
   );
 }
-export default Home;
+export default Search;
