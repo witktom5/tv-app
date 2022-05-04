@@ -52,6 +52,27 @@
   max-height: 295px;
 }
 
+.container-home {
+  background-image: url('./assets/bg.jpg');
+  z-index: 51;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-home {
+  margin: auto;
+  font-weight: 700;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: hsl(210, 35%, 95%);
+}
+
+.btn-home {
+  background-color: hsl(220, 15%, 35%);
+  border-color: hsl(220, 15%, 30%);
+  color: hsl(210, 35%, 95%);
+}
+
 @media (max-width: 640px) {
   .tv-show-img {
     width: 147px;
