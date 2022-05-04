@@ -18,7 +18,7 @@ function TopShow({
       <div className='card-body p-0'>
         <h2 className='card-title text-2xl sm:text-3xl lg:text-2xl xl:text-3xl bg-base-300 bg-opacity-50 mt-10 py-1 justify-center w-full relative pr-12'>
           {name}
-          <span className='absolute right-0 bg-accent py-3 px-6'>{rank}</span>
+          <span className='absolute right-0 bg-primary py-3 px-6'>{rank}</span>
         </h2>
         <div className='px-5 w-max-content mt-8 flex flex-col h-full sm:text-xl lg:text-lg xl:text-xl'>
           <p>

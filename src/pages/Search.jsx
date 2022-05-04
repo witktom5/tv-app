@@ -39,7 +39,7 @@ function Search() {
     <Spinner />
   ) : (
     <section className='w-4/5'>
-      <Header title={'Search TV Shows'} />
+      <Header title={'Search for TV Shows'} />
       <div>
         <form onSubmit={onSubmit}>
           <div className='form-control'>
@@ -53,7 +53,7 @@ function Search() {
               />
               <button
                 type='submit'
-                className='btn btn-square'
+                className='btn btn-square btn-primary'
                 aria-label='search'
               >
                 <FaSearch className='w-5 h-5' />

@@ -28,13 +28,13 @@ function SearchItem({
 
   return (
     <div className='bg-base-200 rounded-xl shadow-xl mb-8 flex flex-col sm:flex-row gap-2 mx-auto'>
-      <div className='flex flex-row sm:flex-col bg-base-300 flex-none rounded-t-xl lg:rounded-l-xl'>
+      <div className='flex flex-row sm:flex-col bg-base-300 flex-none rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none'>
         <img
           src={image ?? noPhoto}
           alt={name}
           className='tv-show-img object-scale-down bg-no-repeat rounded-tl-xl'
         />
-        <div className='p-3 flex flex-col justify-center h-full mx-auto'>
+        <div className='p-3 flex flex-col justify-evenly h-full mx-auto'>
           <p>
             <strong>Language:</strong> {language ?? 'Unknown'}
           </p>
@@ -42,7 +42,7 @@ function SearchItem({
             <strong>Runtime:</strong> {runtime ? runtime + ' min' : 'Unknown'}
           </p>
           <p>
-            <strong>Premiere:</strong> {premiered ?? 'Unknown'}
+            <strong>Premiered:</strong> {premiered ?? 'Unknown'}
           </p>
           <p>
             <strong>Status:</strong> {status ? status : 'Unknown'}
@@ -55,12 +55,12 @@ function SearchItem({
         </div>
       </div>
       <div className='flex flex-col gap-4 p-3 pr-6 w-full'>
-        <h2 className='card-title text-2xl pt-2 md:pt-8 pb-4 self-center'>
+        <h2 className='card-title text-2xl pt-2 md:pt-4 pb-4 self-center'>
           {name}
         </h2>
         <div
           dangerouslySetInnerHTML={{ __html: shortenSummary(summary) }}
-          className='my-auto'
+          className='my-auto px-2'
         />
         <button className='btn btn-block mt-auto'>Details</button>
         <p>

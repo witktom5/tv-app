@@ -10,11 +10,15 @@ module.exports = {
       {
         light: {
           ...require('daisyui/src/colors/themes')['[data-theme=light]'],
-          'base-100': 'hsl(210, 95%, 99%)',
+          'base-100': 'hsl(0, 0%, 99%)',
+          'base-200': 'hsl(205, 20%, 94%)',
+          'base-300': 'hsl(210, 20%, 89%)',
+          primary: 'hsl(214, 55%, 50%)',
         },
         dark: {
           ...require('daisyui/src/colors/themes')['[data-theme=dark]'],
-          info: 'hsl(221, 48%, 4%)',
+          primary: 'hsl(225, 25%, 32%)',
+          'primary-content': '#B3C5EF',
         },
       },
     ],
