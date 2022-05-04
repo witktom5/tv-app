@@ -20,6 +20,8 @@ function Search() {
     if (searchData) navigate('/search/results');
   });
 
+  // fetch tv shows from api
+
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
