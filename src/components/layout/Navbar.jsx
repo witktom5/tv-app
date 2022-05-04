@@ -5,7 +5,7 @@ import DropdownMenu from '../DropdownMenu';
 
 function Navbar() {
   return (
-    <nav className='bg-base-300 bg-opacity-80 flex justify-center custom-navbar'>
+    <nav className='bg-base-300 bg-opacity-80 flex justify-center custom-navbar z-50'>
       <div className='navbar lg:w-4/5'>
         <div className='flex-none'></div>
         <DropdownMenu>

@@ -24,7 +24,11 @@ function ColorSchemeToggler() {
   };
 
   return (
-    <button className='btn btn-ghost' onClick={onClick}>
+    <button
+      className='btn btn-ghost'
+      onClick={onClick}
+      aria-label='toggle color scheme'
+    >
       {darkMode ? (
         <BsSunFill className='w-5 h-5' />
       ) : (

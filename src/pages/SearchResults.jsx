@@ -27,8 +27,8 @@ function SearchResults() {
       <h3 className='text-center text-xl -mt-10 mb-6'>
         {searchData.length > 0
           ? searchData.length +
-            ` result${searchData.length === 1 ? '' : 's'} found`
-          : 'No results found'}
+            ` TV show${searchData.length === 1 ? '' : 's'} found`
+          : 'No TV shows found'}
       </h3>
 
       <button
