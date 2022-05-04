@@ -17,7 +17,7 @@ module.exports = {
         },
         dark: {
           ...require('daisyui/src/colors/themes')['[data-theme=dark]'],
-          primary: 'hsl(222, 50%, 32%)',
+          primary: 'hsl(222, 35%, 32%)',
           'primary-content': '#B3C5EF',
         },
       },

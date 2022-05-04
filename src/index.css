@@ -53,11 +53,7 @@
 }
 
 .container-home {
-  background-image: url('./assets/bg.jpg');
   z-index: 51;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card-home {
@@ -68,8 +64,8 @@
 }
 
 .btn-home {
-  background-color: hsl(220, 15%, 35%);
-  border-color: hsl(220, 15%, 30%);
+  background-color: hsl(220, 38%, 35%);
+  border-color: hsl(220, 38%, 33%);
   color: hsl(210, 35%, 95%);
 }
 
