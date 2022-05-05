@@ -56,7 +56,9 @@ function TopShow({
           </p>
           <p>
             <strong>External link: </strong>
-            <a href={link}>Click</a>
+            <a href={link} className='underline'>
+              Click
+            </a>
           </p>
         </div>
       </div>

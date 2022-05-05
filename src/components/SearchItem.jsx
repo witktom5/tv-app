@@ -57,9 +57,9 @@ function SearchItem({
         </div>
       </div>
       <div className='flex flex-col gap-4 p-3 pr-6 w-full'>
-        <h2 className='card-title text-2xl pt-2 md:pt-4 pb-4 self-center'>
+        <h3 className='card-title text-2xl pt-2 md:pt-4 pb-4 self-center'>
           {name}
-        </h2>
+        </h3>
         <div
           dangerouslySetInnerHTML={{ __html: shortenSummary(summary) }}
           className='my-auto px-2'

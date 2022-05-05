@@ -25,12 +25,12 @@ function SearchResults() {
     searchData && (
       <section className='w-4/5'>
         <Header title={`Search results for "${searchText}"`} />
-        <h3 className='text-center text-xl -mt-10 mb-6'>
+        <h2 className='text-center text-xl -mt-10 mb-6'>
           {searchData.length > 0
             ? searchData.length +
               ` TV show${searchData.length === 1 ? '' : 's'} found`
             : 'No TV shows found'}
-        </h3>
+        </h2>
 
         <button
           onClick={onClickBack}
