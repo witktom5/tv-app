@@ -13,6 +13,7 @@ function Home() {
     <section className='absolute h-screen w-screen top-0 left-0 right-0 bottom-0 container-home flex bg-base-300'>
       <img
         src={bgImage}
+        alt='...'
         /*preload img*/ onLoad={() => setIsLoading(false)}
         className='opacity-0 absolute w-1 h-1'
       />
