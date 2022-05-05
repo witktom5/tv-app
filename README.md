@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# TV Show Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live version](https://tvshow-finder.netlify.app/)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+A webapp that fetches TV show data from two APIs: [TV API (TVmaze)](https://www.tvmaze.com/api) & [TV Shows API (EpisoDate)](https://www.episodate.com/api) and displays the data. It allows to search for TV shows by their titles (with the use of TVmaze), and it also displays 5 most popular shows according to EpisoDate.
 
-### `npm start`
+Top shows number could be higher, but I wanted to limit HTTP requests to minimum. For the same reason, TV show data after retrieving is kept in global context. This also allows for smoother user experience, as it makes it possible to instantly go back to current TV show search results without re-fetching the data. Search data can be cleared by clicking the "Back to search" button, allowing for another search.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After getting the TV shows data, user can visit individual subpages of each show to get, if there is one, a larger size image and more detailed information of a given TV show.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+It is responsive and comes with a togglable dark mode.
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React 18 with React Router v6 were used as the front-end framework. Axios was used to handle fetch requests from the API. Tailwind and DaisyUI as well as some custom CSS were used for the UI. There is also a few icons from Font Awesome (react-icons/fa).
 
-### `npm run build`
+## License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The MIT License
