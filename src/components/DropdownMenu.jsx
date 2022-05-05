@@ -18,7 +18,7 @@ function DropdownMenu({ children }) {
       </label>
       <div
         tabIndex='0'
-        className='menu dropdown-content p-2 shadow bg-base-300 rounded-box w-52 mt-4'
+        className='menu dropdown-content p-2 shadow bg-neutral rounded-box w-52 mt-4'
       >
         {children}
       </div>
