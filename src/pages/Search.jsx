@@ -17,7 +17,7 @@ function Search() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (searchData) navigate('/search/results');
+    if (searchData && searchData.length > 1) navigate('/search/results');
   });
 
   // fetch tv shows from api

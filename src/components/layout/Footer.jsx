@@ -8,6 +8,7 @@ function Footer() {
             <a
               href='https://tomaszwitkowski.netlify.app/'
               target='_blank'
+              rel='noreferrer'
               className='font-semibold'
             >
               {' '}
@@ -20,6 +21,7 @@ function Footer() {
           <a
             href='https://www.tvmaze.com/api'
             target='_blank'
+            rel='noreferrer'
             className='font-semibold'
           >
             TV API (TVmaze)
@@ -28,6 +30,7 @@ function Footer() {
           <a
             href='https://www.episodate.com/api'
             target='_blank'
+            rel='noreferrer'
             className='font-semibold'
           >
             TV Shows API (EpisoDate)

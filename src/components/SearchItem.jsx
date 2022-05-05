@@ -1,4 +1,5 @@
 import noPhoto from '../assets/nophoto.svg';
+import { Link } from 'react-router-dom';
 
 function SearchItem({
   name,
@@ -10,6 +11,7 @@ function SearchItem({
   status,
   premiered,
   ended,
+  id,
 }) {
   // shorten summary to max 220 characters,
   // handle no summary situations
@@ -62,7 +64,9 @@ function SearchItem({
           dangerouslySetInnerHTML={{ __html: shortenSummary(summary) }}
           className='my-auto px-2'
         />
-        <button className='btn btn-block mt-auto'>Details</button>
+        <Link to={`/search/results/${id}`} className='btn btn-block mt-auto'>
+          Details
+        </Link>
         <p>
           <strong>Genres:</strong>{' '}
           {genres && genres.length > 0 ? genres.join(', ') : 'Unknown'}

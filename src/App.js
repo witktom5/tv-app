@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import TopShows from './pages/TopShows';
 import Search from './pages/Search';
 import SearchResults from './pages/SearchResults';
+import DisplayShow from './pages/DisplayShow';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
                 <Route path='/top' element={<TopShows />} />
                 <Route path='/search' element={<Search />} />
                 <Route path='/search/results' element={<SearchResults />} />
+                <Route
+                  path='/search/results/:showId'
+                  element={<DisplayShow />}
+                />
                 <Route path='/*' element={<NotFound />} />
               </Routes>
             </Container>
