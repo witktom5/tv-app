@@ -26,13 +26,13 @@ function Home() {
             alt='...'
             className='absolute h-screen w-screen top-0 left-0 right-0 bottom-0 object-cover'
           />
-          <div className='bg-opacity-70 card-home rounded-md p-10 w-4/5 max-w-xl z-50'>
+          <div className='bg-opacity-70 card-home rounded-sm p-10 w-4/5 max-w-xl z-50'>
             <Header title={'TV Show Finder'} />
             <div className='flex flex-col sm:flex-row gap-3 justify-between sm:justify-evenly pb-4'>
               <Link className='btn sm:btn-lg btn-home' to='/search'>
                 Find TV Shows
               </Link>
-              <Link className='btn sm:btn-lg btn-home' to='/search'>
+              <Link className='btn sm:btn-lg btn-home' to='/top'>
                 See Top Shows
               </Link>
             </div>

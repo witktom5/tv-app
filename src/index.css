@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600;700&display=swap');
+
 #root {
   min-height: 100vh;
   padding-top: 86px;
   display: flex;
   flex-direction: column;
+}
+
+body {
+  font-family: 'Inter';
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat';
 }
 
 .custom-navbar {
@@ -58,14 +71,14 @@
 
 .card-home {
   margin: auto;
-  font-weight: 700;
+  font-weight: 600;
   background-color: hsla(0, 0%, 0%, 0.5);
   color: hsl(210, 35%, 95%);
 }
 
 .btn-home {
-  background-color: hsl(220, 38%, 35%);
-  border-color: hsl(220, 38%, 33%);
+  background-color: hsl(220, 60%, 43%);
+  border-color: hsl(220, 60%, 41%);
   color: hsl(210, 35%, 95%);
 }
 

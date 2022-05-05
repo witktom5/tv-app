@@ -10,13 +10,13 @@ function Navbar() {
         <div className='flex-none'></div>
         <DropdownMenu>
           <MenuButton url='/' icon={<FaHome />} text='Home' />
-          <MenuButton url='/top' icon={<FaTv />} text='Top Shows' />
           <MenuButton url='/search' icon={<FaSearch />} text='Search' />
+          <MenuButton url='/top' icon={<FaTv />} text='Top Shows' />
         </DropdownMenu>
         <div className='hidden lg:flex'>
           <MenuButton url='/' icon={<FaHome />} text='Home' />
-          <MenuButton url='/top' icon={<FaTv />} text='Top Shows' />
           <MenuButton url='/search' icon={<FaSearch />} text='Search' />
+          <MenuButton url='/top' icon={<FaTv />} text='Top Shows' />
         </div>
         <div className='ml-auto'>
           <ColorSchemeToggler />
