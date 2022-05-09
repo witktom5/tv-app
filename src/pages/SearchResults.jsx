@@ -39,7 +39,7 @@ function SearchResults() {
           <FaArrowLeft /> Back to Search
         </button>
 
-        <div className='grid xl:grid-cols-2 gap-x-8 w-full sm:w-5/6 md:w-3/4 lg:w-2/3 xl:w-full 2xl:w-3/4 3xl:w-2/3 mx-auto'>
+        <div className='grid xl:grid-cols-2 gap-x-8 w-full sm:w-5/6 md:w-3/4 lg:w-2/3 xl:w-full 2xl:w-3/4 3xl:w-2/3 justify-center mx-auto'>
           {searchData &&
             searchData.map((el, id) => (
               <SearchItem

@@ -56,7 +56,7 @@ function SearchItem({
           )}
         </div>
       </div>
-      <div className='flex flex-col gap-4 p-3 pr-6 w-full'>
+      <div className='flex flex-col gap-4 p-3 sm:pr-6 w-full'>
         <h3 className='card-title text-2xl pt-2 md:pt-4 pb-4 self-center'>
           {name}
         </h3>
