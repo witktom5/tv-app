@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import SearchContext from '../context/search/SearchContext';
 import noPhoto from '../assets/nophoto.svg';
 
@@ -43,6 +44,7 @@ function DisplayShow() {
                 to='/search'
                 className='btn btn-outline btn-sm flex gap-2 -mt-6 mb-5 mx-auto sm:w-64'
               >
+                <FaArrowLeft />
                 Back to search results
               </Link>
 
