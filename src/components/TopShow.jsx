@@ -56,7 +56,12 @@ function TopShow({
           </p>
           <p>
             <strong>External link: </strong>
-            <a href={link} className='underline'>
+            <a
+              href={link}
+              className='underline'
+              target='_blank'
+              rel='noreferrer'
+            >
               Click
             </a>
           </p>
